@@ -17,7 +17,7 @@ export default createGlobalStyle`
   body {
     background: ${({ theme }) => theme.colors.black};
     font-size: ${({ theme }) => theme.fontSize.text};
-    color: ${({ theme }) => theme.colors.primary};
+    color: ${({ theme }) => theme.colors.white};
     font-family: ${({ theme }) => theme.fontFamily.raleway};
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

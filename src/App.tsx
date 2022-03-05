@@ -1,7 +1,11 @@
 import { FC } from 'react'
+import { ThemeProvider } from 'styled-components'
+import Global from './styles/global'
+import { theme } from './styles/theme'
 
 export const App: FC = () => (
-  <div>
+  <ThemeProvider theme={theme}>
     <h1>Hello World</h1>
-  </div>
+    <Global />
+  </ThemeProvider>
 )
