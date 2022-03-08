@@ -11,11 +11,11 @@ describe('Footer', () => {
   it('should render correctly', () => {
     render(<Header />)
   })
-})
 
-test('it works', () => {
-  const tree = renderer.create(<ContainerHeader />).toJSON()
-  expect(tree).toHaveStyleRule('color', `${theme.colors.primary}`)
-  expect(tree).toHaveStyleRule('background', `${theme.colors.black}`)
-  expect(tree).toHaveStyleRule('height', `50px`)
+  test('it works', () => {
+    const tree = renderer.create(<ContainerHeader />).toJSON()
+    expect(tree).toHaveStyleRule('color', `${theme.colors.primary}`)
+    expect(tree).toHaveStyleRule('background', `${theme.colors.black}`)
+    expect(tree).toHaveStyleRule('height', `50px`)
+  })
 })

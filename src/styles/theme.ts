@@ -8,7 +8,7 @@ export const theme = {
 
   fontFamily: {
     oswald: 'Oswald, sans-serif',
-    raleway: 'Raleway, sans-serif',
+    raleway: 'Raleway,sans-serif',
     urbanist: 'Urbanist, sans-serif',
   },
 
