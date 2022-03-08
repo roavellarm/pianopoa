@@ -14,13 +14,13 @@ export const Wrapper = styled.div`
   opacity: 0.8;
 `
 
-export const TextDiv = styled.div`
-  width: 95%;
-  line-height: 29px;
-  font-size: 20px;
-  padding-top: 25px;
-  padding-left: 25px;
-  padding-right: 25px;
-  margin-right: 50px;
-  font-family: ${({ theme }) => theme.fontFamily.raleway};
-`
+// export const TextDiv = styled.div`
+//   width: 95%;
+//   line-height: 29px;
+//   font-size: 20px;
+//   padding-top: 25px;
+//   padding-left: 25px;
+//   padding-right: 25px;
+//   margin-right: 50px;
+//   font-family: ${({ theme }) => theme.fontFamily.raleway};
+// `
