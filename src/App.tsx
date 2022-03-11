@@ -5,7 +5,7 @@ import { theme } from './styles/theme'
 
 export const App: FC = () => (
   <ThemeProvider theme={theme}>
-    <h1 title="botao">Hellow World</h1>
+    <h1>Hello World</h1>
     <Global />
   </ThemeProvider>
 )

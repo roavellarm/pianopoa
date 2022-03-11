@@ -7,10 +7,10 @@ describe('App', () => {
     render(<App />)
   })
 
-  it('should compare if have a text Hellow World', () => {
+  it('should compare if have a text Hello World', () => {
     render(<App />)
 
-    const getText = screen.getByText('Hellow World')
+    const getText = screen.getByRole('heading', { name: /Hello World/i })
 
     expect(getText).toBeInTheDocument()
   })
