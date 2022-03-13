@@ -48,7 +48,7 @@ export const BioSpan = styled.span`
   transition: ease 0.5s;
 
   :hover {
-    color: #df8253;
+    color: #e7a17e;
   }
 
   @media screen and (max-width: 700px) {
