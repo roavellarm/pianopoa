@@ -31,6 +31,7 @@ export const BioContainer = styled.div`
   align-items: flex-end;
   justify-content: right;
   margin-left: 11.1rem;
+  margin-top: 0.7rem;
 
   @media screen and (max-width: 700px) {
     margin-top: 1rem;
