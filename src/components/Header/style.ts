@@ -29,7 +29,7 @@ export const BioContainer = styled.div`
   margin-left: 11.1rem;
 `
 export const BioSpan = styled.span`
-  margin-right: 2.5rem;
+  margin-right: 2.7rem;
   font-family: ${theme.fontFamily.urbanist};
   font-size: 22px;
   line-height: 26.4px;
