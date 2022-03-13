@@ -33,9 +33,8 @@ export const BioContainer = styled.div`
   margin-left: 11.1rem;
   margin-top: 0.7rem;
 
-  @media screen and (max-width: 700px) {
-    margin-top: 1rem;
-    margin-left: -14rem;
+  @media screen and (max-width: 800px) {
+    display: none;
   }
 `
 export const BioSpan = styled.span`
@@ -46,6 +45,11 @@ export const BioSpan = styled.span`
   color: rgba(244, 211, 194, 1);
   text-shadow: 1px 1px 1px #000000;
   cursor: pointer;
+  transition: ease 0.5s;
+
+  :hover {
+    color: #df8253;
+  }
 
   @media screen and (max-width: 700px) {
     font-size: 15px;
