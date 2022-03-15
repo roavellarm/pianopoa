@@ -10,10 +10,6 @@ export const HeaderContainer = styled.div`
   width: 100%;
   position: fixed;
   filter: brightness(77%);
-
-  @media screen and (max-width: 700px) {
-    flex-direction: column;
-  }
 `
 export const PianoPoaContainer = styled.div`
   font-family: ${theme.fontFamily.oswald};
@@ -33,10 +29,6 @@ export const BioContainer = styled.div`
   justify-content: right;
   margin-left: 11.1rem;
   margin-top: 0.7rem;
-
-  @media screen and (max-width: 800px) {
-    display: none;
-  }
 `
 export const BioSpan = styled.span`
   margin-right: 2.7rem;
@@ -50,10 +42,5 @@ export const BioSpan = styled.span`
 
   :hover {
     color: #e7a17e;
-  }
-
-  @media screen and (max-width: 700px) {
-    font-size: 15px;
-    margin-right: 2rem;
   }
 `

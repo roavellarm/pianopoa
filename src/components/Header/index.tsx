@@ -1,4 +1,4 @@
-import { HeaderContainer, BioSpan, PianoPoaContainer, BioContainer } from './style'
+import { HeaderContainer, BioSpan, PianoPoaContainer, BioContainer } from './style-header'
 
 function Header() {
   return (
