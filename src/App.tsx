@@ -7,6 +7,9 @@ import { theme } from './styles/theme'
 export const App: FC = () => (
   <ThemeProvider theme={theme}>
     <Header />
+    <br />
+    <br />
+    <br />
     <h1>Hello World</h1>
     <Global />
   </ThemeProvider>

@@ -2,13 +2,14 @@ import styled from 'styled-components'
 import { theme } from '../../styles/theme'
 
 export const HeaderContainer = styled.div`
-  background: #737373;
-  box-shadow: 0px 0px 25px 25px #737373;
+  background: rgba(16, 12, 8, 0.5);
+  box-shadow: 0px 0px 25px 25px rgba(16, 12, 8, 0.5);
   display: flex;
   align-items: center;
   height: 80px;
   width: 100%;
   position: fixed;
+  filter: brightness(77%);
 
   @media screen and (max-width: 700px) {
     flex-direction: column;
@@ -22,7 +23,7 @@ export const PianoPoaContainer = styled.div`
   line-height: 53.35px;
   text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.51);
   font-weight: 400;
-  color: #efefeb;
+  color: rgba(239, 239, 235, 1);
 `
 export const BioContainer = styled.div`
   width: 50rem;
