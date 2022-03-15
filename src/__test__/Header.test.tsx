@@ -1,5 +1,5 @@
 import { create } from 'react-test-renderer'
-import { render } from '@testing-library/react'
+import { render, screen } from '@testing-library/react'
 import 'jest-styled-components'
 import Header from '../components/Header'
 
@@ -60,5 +60,61 @@ describe('Header', () => {
     expect(tree).toHaveStyleRule('text-shadow', '1px 1px 1px #000000')
     expect(tree).toHaveStyleRule('cursor', 'pointer')
     expect(tree).toHaveStyleRule('transition', 'ease 0.5s')
+  })
+
+  it('should compare if have a text PIANO POA', () => {
+    render(<Header />)
+
+    const getText = screen.getByText('PIANO POA')
+
+    expect(getText).toBeInTheDocument()
+  })
+
+  it('should compare if have a text BIO', () => {
+    render(<Header />)
+
+    const getText = screen.getByText('BIO')
+
+    expect(getText).toBeInTheDocument()
+  })
+
+  it('should compare if have a text AULAS', () => {
+    render(<Header />)
+
+    const getText = screen.getByText('AULAS')
+
+    expect(getText).toBeInTheDocument()
+  })
+
+  it('should compare if have a text GALERIA', () => {
+    render(<Header />)
+
+    const getText = screen.getByText('GALERIA')
+
+    expect(getText).toBeInTheDocument()
+  })
+
+  it('should compare if have a text MÚSICA', () => {
+    render(<Header />)
+
+    const getText = screen.getByText('MÚSICA')
+
+    expect(getText).toBeInTheDocument()
+  })
+
+  it('should compare if have a text NEWSLETTER', () => {
+    render(<Header />)
+
+    const getText = screen.getByText('NEWSLETTER')
+
+    expect(getText).toBeInTheDocument()
+  })
+
+  it('should compare if have a text CONTATO', () => {
+    render(<Header />)
+
+    const getText = screen.getByText('CONTATO')
+
+    expect(getText).toBeInTheDocument()
   })
 })
