@@ -13,7 +13,7 @@ import {
   SocialContainer,
   SocialText,
   SocialIconsContainer,
-} from './styled-footer'
+} from './style-footer'
 
 import whats from '../../images/whats.svg'
 import email from '../../images/email.svg'

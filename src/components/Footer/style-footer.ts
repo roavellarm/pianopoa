@@ -9,7 +9,6 @@ export const FooterContainer = styled.div`
   justify-content: space-evenly;
   align-items: center;
   margin-top: 45.2rem;
-  color: gray;
 `
 export const NameContainer = styled.div`
   display: flex;
