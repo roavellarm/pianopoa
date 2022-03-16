@@ -127,5 +127,5 @@ export const SocialIconsContainer = styled.div`
   width: 50%;
   height: 70px;
   margin-left: 169px;
-  margin-top: -8px;
+  margin-top: -4px;
 `
