@@ -41,9 +41,21 @@ function Footer() {
       <SocialContainer>
         <SocialText>Social</SocialText>
         <SocialIconsContainer>
-          <img src={face} alt="face" width="30" height="30" style={{ marginRight: '20px' }} />
-          <img src={yotube} alt="youtube" width="32" height="33" style={{ marginRight: '20px' }} />
-          <img src={insta} alt="instagram" width="30" height="30" />
+          <a href="https://www.facebook.com/jordana.brusa">
+            <img src={face} alt="face" width="30" height="30" style={{ marginRight: '20px' }} />
+          </a>
+          <a href="https://www.youtube.com/channel/UCh1K7DHlglexif0ll-jSN0g">
+            <img
+              src={yotube}
+              alt="youtube"
+              width="32"
+              height="33"
+              style={{ marginRight: '20px' }}
+            />
+          </a>
+          <a href="https://www.instagram.com/jordanabrusa/?hl=pt-br">
+            <img src={insta} alt="instagram" width="30" height="30" />
+          </a>
         </SocialIconsContainer>
       </SocialContainer>
     </FooterContainer>
