@@ -39,9 +39,10 @@ export const LineNameContainer = styled.div`
 
 export const ContactContainer = styled.div`
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
   margin-left: -270px;
+  margin-top: 22px;
 `
 export const WhatsContainer = styled.div`
   display: flex;
@@ -51,15 +52,15 @@ export const WhatsContainer = styled.div`
 `
 
 export const WhatsImage = styled.img`
-  width: 21px;
+  width: 20px;
   height: 20px;
-  margin-right: 4px;
+  margin-right: 7px;
 `
 export const WhatsNumber = styled.div`
   width: 298px;
   height: 20px;
   /* left: 316px; */
-  margin-top: -3px;
+  margin-top: -4px;
 
   font-family: ${theme.fontFamily.oswald};
   font-style: normal;
@@ -73,13 +74,26 @@ export const WhatsNumber = styled.div`
 
 export const EmailContainer = styled.div`
   display: flex;
-  align-items: center;
-  margin-top: -25px;
-  justify-content: center;
+  margin-top: 13px;
 `
 
 export const EmailImage = styled.img`
-  width: 21px;
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+`
+
+export const EmailNumber = styled.div`
+  width: 298px;
   height: 20px;
-  margin-right: 4px;
+  margin-top: -4px;
+
+  font-family: ${theme.fontFamily.oswald};
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20.75px;
+
+  letter-spacing: 0.06em;
+  color: #292a2c;
 `

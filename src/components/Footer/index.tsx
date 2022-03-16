@@ -9,6 +9,7 @@ import {
   WhatsNumber,
   EmailImage,
   EmailContainer,
+  EmailNumber,
 } from './styled-footer'
 
 import whats from '../../images/whats.svg'
@@ -28,9 +29,10 @@ function Footer() {
         </WhatsContainer>
         <EmailContainer>
           <EmailImage src={email} alt="email" />
+          <EmailNumber>jordanabrusa11@gmail.com</EmailNumber>
         </EmailContainer>
       </ContactContainer>
-      Footer
+      <div>Footer</div>
     </FooterContainer>
   )
 }
