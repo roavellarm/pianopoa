@@ -8,6 +8,9 @@ import {
   NameContainer,
   Name,
   LineNameContainer,
+  ContactContainer,
+  WhatsContainer,
+  WhatsImage,
 } from '../components/Footer/style-footer'
 
 describe('Footer', () => {
@@ -57,5 +60,29 @@ describe('Footer', () => {
     expect(tree).toHaveStyleRule('top', '4px')
     expect(tree).toHaveStyleRule('border', '2px solid #292a2c')
     expect(tree).toHaveStyleRule('transform', 'rotate(90deg)')
+  })
+
+  test('Expect to render corretcly the  ContactContainer styles', () => {
+    const tree = create(<ContactContainer />).toJSON()
+    expect(tree).toHaveStyleRule('margin-left', '-75px')
+    expect(tree).toHaveStyleRule('flex-direction', 'column')
+    expect(tree).toHaveStyleRule('display', 'flex')
+    expect(tree).toHaveStyleRule('justify-content', 'center')
+    expect(tree).toHaveStyleRule('margin-top', '22px')
+  })
+
+  test('Expect to render corretcly the  WhatsContainer styles', () => {
+    const tree = create(<WhatsContainer />).toJSON()
+    expect(tree).toHaveStyleRule('align-items', 'center')
+    expect(tree).toHaveStyleRule('display', 'flex')
+    expect(tree).toHaveStyleRule('justify-content', 'center')
+    expect(tree).toHaveStyleRule('margin-top', '-25px')
+  })
+
+  test('Expect to render corretcly the  WhatsImage styles', () => {
+    const tree = create(<WhatsImage />).toJSON()
+    expect(tree).toHaveStyleRule('width', '20px')
+    expect(tree).toHaveStyleRule('height', '20px')
+    expect(tree).toHaveStyleRule('margin-right', '7px')
   })
 })
