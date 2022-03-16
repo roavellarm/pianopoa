@@ -1,5 +1,5 @@
 import { create } from 'react-test-renderer'
-import { render } from '@testing-library/react'
+import { render, screen } from '@testing-library/react'
 import 'jest-styled-components'
 import Footer from '../components/Footer'
 
@@ -163,5 +163,37 @@ describe('Footer', () => {
     expect(tree).toHaveStyleRule('margin-top', '-5px')
     expect(tree).toHaveStyleRule('align-items', 'center')
     expect(tree).toHaveStyleRule('justify-content', 'center')
+  })
+
+  it('should compare if have a text Jordana Brusa', () => {
+    render(<Footer />)
+
+    const getText = screen.getByText('Jordana Brusa')
+
+    expect(getText).toBeInTheDocument()
+  })
+
+  it('should compare if have a text (51) 98459 6917', () => {
+    render(<Footer />)
+
+    const getText = screen.getByText('(51) 98459 6917')
+
+    expect(getText).toBeInTheDocument()
+  })
+
+  it('should compare if have a text jordanabrusa11@gmail.com', () => {
+    render(<Footer />)
+
+    const getText = screen.getByText('jordanabrusa11@gmail.com')
+
+    expect(getText).toBeInTheDocument()
+  })
+
+  it('should compare if have a text Social', () => {
+    render(<Footer />)
+
+    const getText = screen.getByText('Social')
+
+    expect(getText).toBeInTheDocument()
   })
 })
