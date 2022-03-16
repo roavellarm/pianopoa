@@ -15,7 +15,7 @@ export const NameContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: -220px;
+  margin-left: -10px;
 `
 export const Name = styled.span`
   font-family: ${theme.fontFamily.oswald};
@@ -26,12 +26,13 @@ export const Name = styled.span`
   letter-spacing: 0.05em;
   text-align: left;
   color: rgba(41, 42, 44, 1);
+  width: 250px;
 `
 export const LineNameContainer = styled.div`
   color: rgba(41, 42, 44, 1);
   width: 66px;
   height: 0px;
-  left: 259px;
+  margin-left: -18px;
   top: 4px;
   border: 2px solid #292a2c;
   transform: rotate(90deg);
@@ -41,7 +42,7 @@ export const ContactContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: -270px;
+  margin-left: -75px;
   margin-top: 22px;
 `
 export const WhatsContainer = styled.div`
@@ -96,4 +97,35 @@ export const EmailNumber = styled.div`
 
   letter-spacing: 0.06em;
   color: #292a2c;
+`
+
+export const SocialContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  height: 70px;
+  margin-left: 100px;
+`
+
+export const SocialText = styled.span`
+  text-align: right;
+  font-family: ${theme.fontFamily.oswald};
+
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 0.2em;
+
+  color: #292a2c;
+`
+
+export const SocialIconsContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: lightcoral; */
+  width: 50%;
+  height: 70px;
+  margin-left: 169px;
+  margin-top: -8px;
 `
