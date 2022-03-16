@@ -11,6 +11,13 @@ import {
   ContactContainer,
   WhatsContainer,
   WhatsImage,
+  WhatsNumber,
+  EmailContainer,
+  EmailImage,
+  EmailNumber,
+  SocialContainer,
+  SocialText,
+  SocialIconsContainer,
 } from '../components/Footer/style-footer'
 
 describe('Footer', () => {
@@ -84,5 +91,77 @@ describe('Footer', () => {
     expect(tree).toHaveStyleRule('width', '20px')
     expect(tree).toHaveStyleRule('height', '20px')
     expect(tree).toHaveStyleRule('margin-right', '7px')
+  })
+
+  test('Expect to render corretcly the  WhatsNumber styles', () => {
+    const tree = create(<WhatsNumber />).toJSON()
+    expect(tree).toHaveStyleRule('width', '298px')
+    expect(tree).toHaveStyleRule('height', '20px')
+    expect(tree).toHaveStyleRule('font-family', 'Oswald,sans-serif')
+
+    expect(tree).toHaveStyleRule('font-style', 'normal')
+    expect(tree).toHaveStyleRule('font-weight', '400')
+    expect(tree).toHaveStyleRule('font-size', '14px')
+    expect(tree).toHaveStyleRule('line-height', '21px')
+    expect(tree).toHaveStyleRule('letter-spacing', '0.06em')
+    expect(tree).toHaveStyleRule('color', '#292a2c')
+  })
+
+  test('Expect to render corretcly the  EmailContainer  styles', () => {
+    const tree = create(<EmailContainer />).toJSON()
+    expect(tree).toHaveStyleRule('display', 'flex')
+    expect(tree).toHaveStyleRule('margin-top', '13px')
+  })
+
+  test('Expect to render corretcly the  EmailImage  styles', () => {
+    const tree = create(<EmailImage />).toJSON()
+    expect(tree).toHaveStyleRule('width', '16px')
+    expect(tree).toHaveStyleRule('height', '16px')
+    expect(tree).toHaveStyleRule('margin-right', '8px')
+  })
+
+  test('Expect to render corretcly the  EmailNumber  styles', () => {
+    const tree = create(<EmailNumber />).toJSON()
+    expect(tree).toHaveStyleRule('width', '298px')
+    expect(tree).toHaveStyleRule('height', '20px')
+    expect(tree).toHaveStyleRule('margin-top', '-4px')
+    expect(tree).toHaveStyleRule('font-family', 'Oswald,sans-serif')
+    expect(tree).toHaveStyleRule('font-style', 'normal')
+    expect(tree).toHaveStyleRule('font-weight', '400')
+    expect(tree).toHaveStyleRule('font-size', '14px')
+    expect(tree).toHaveStyleRule('line-height', '20.75px')
+    expect(tree).toHaveStyleRule('letter-spacing', '0.06em')
+    expect(tree).toHaveStyleRule('color', '#292a2c')
+  })
+
+  test('Expect to render corretcly the  SocialContainer  styles', () => {
+    const tree = create(<SocialContainer />).toJSON()
+    expect(tree).toHaveStyleRule('width', '25%')
+    expect(tree).toHaveStyleRule('height', '70px')
+    expect(tree).toHaveStyleRule('margin-left', '100px')
+    expect(tree).toHaveStyleRule('flex-direction', 'column')
+    expect(tree).toHaveStyleRule('display', 'flex')
+  })
+
+  test('Expect to render corretcly the  SocialText  styles', () => {
+    const tree = create(<SocialText />).toJSON()
+    expect(tree).toHaveStyleRule('text-align', 'right')
+    expect(tree).toHaveStyleRule('font-family', 'Oswald,sans-serif')
+    expect(tree).toHaveStyleRule('font-weight: 500')
+    expect(tree).toHaveStyleRule('font-size', '15px')
+    expect(tree).toHaveStyleRule('line-height', '22px')
+    expect(tree).toHaveStyleRule('letter-spacing', '0.2em')
+    expect(tree).toHaveStyleRule('color', '#292a2c')
+  })
+
+  test('Expect to render corretcly the  SocialIconsContainer  styles', () => {
+    const tree = create(<SocialIconsContainer />).toJSON()
+    expect(tree).toHaveStyleRule('width', '50%')
+    expect(tree).toHaveStyleRule('height', '70px')
+    expect(tree).toHaveStyleRule('margin-left', '169px')
+    expect(tree).toHaveStyleRule('display', 'flex')
+    expect(tree).toHaveStyleRule('margin-top', '-5px')
+    expect(tree).toHaveStyleRule('align-items', 'center')
+    expect(tree).toHaveStyleRule('justify-content', 'center')
   })
 })
