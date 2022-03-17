@@ -8,7 +8,7 @@ export const FooterContainer = styled.div`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: 45.2rem;
+  margin-top: 42.1rem;
 `
 export const NameContainer = styled.div`
   display: flex;
@@ -26,6 +26,10 @@ export const Name = styled.span`
   text-align: left;
   color: rgba(41, 42, 44, 1);
   width: 250px;
+
+  @media screen and (max-width: 900px) {
+    font-size: 25px;
+  }
 `
 export const LineNameContainer = styled.div`
   color: rgba(41, 42, 44, 1);
