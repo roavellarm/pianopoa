@@ -15,6 +15,10 @@ export const NameContainer = styled.div`
   align-items: center;
   justify-content: center;
   margin-left: -10px;
+
+  @media screen and (max-width: 1024px) {
+    margin-left: -90px;
+  }
 `
 export const Name = styled.span`
   font-family: ${theme.fontFamily.oswald};
@@ -28,7 +32,7 @@ export const Name = styled.span`
   width: 250px;
 
   @media screen and (max-width: 900px) {
-    font-size: 25px;
+    font-size: 44px;
   }
 `
 export const LineNameContainer = styled.div`
@@ -39,6 +43,10 @@ export const LineNameContainer = styled.div`
   top: 4px;
   border: 2px solid #292a2c;
   transform: rotate(90deg);
+
+  @media screen and (max-width: 1024px) {
+    margin-left: -17px;
+  }
 `
 
 export const ContactContainer = styled.div`
@@ -47,6 +55,10 @@ export const ContactContainer = styled.div`
   justify-content: center;
   margin-left: -75px;
   margin-top: 22px;
+
+  @media screen and (max-width: 950px) {
+    margin-left: -130px;
+  }
 `
 export const WhatsContainer = styled.div`
   display: flex;
@@ -108,6 +120,10 @@ export const SocialContainer = styled.div`
   width: 25%;
   height: 70px;
   margin-left: 100px;
+
+  @media screen and (max-width: 1024px) {
+    margin-left: -295px;
+  }
 `
 
 export const SocialText = styled.span`
