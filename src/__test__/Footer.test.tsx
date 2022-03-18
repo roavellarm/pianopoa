@@ -33,7 +33,7 @@ describe('Footer', () => {
     expect(tree).toHaveStyleRule('display', 'flex')
     expect(tree).toHaveStyleRule('align-items', 'center')
     expect(tree).toHaveStyleRule('justify-content', 'space-evenly')
-    expect(tree).toHaveStyleRule('margin-top', '42.1rem')
+    expect(tree).toHaveStyleRule('margin-top', '45.5rem')
   })
 
   test('Expect to render corretcly the NameContainer styles', () => {

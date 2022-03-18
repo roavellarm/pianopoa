@@ -8,7 +8,7 @@ export const FooterContainer = styled.div`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: 42.1rem;
+  margin-top: 45.5rem;
 `
 export const NameContainer = styled.div`
   display: flex;
