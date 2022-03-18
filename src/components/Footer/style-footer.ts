@@ -16,7 +16,11 @@ export const NameContainer = styled.div`
   justify-content: center;
   margin-left: -10px;
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (min-width: 800px) and (max-width: 1024px) {
+    margin-left: -90px;
+  }
+
+  @media screen and (min-width: 1024px) and (max-width: 1200px) {
     margin-left: -90px;
   }
 `
@@ -44,7 +48,7 @@ export const LineNameContainer = styled.div`
   border: 2px solid #292a2c;
   transform: rotate(90deg);
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (min-width: 800px) and (max-width: 1024px) {
     margin-left: -17px;
   }
 `
@@ -56,8 +60,12 @@ export const ContactContainer = styled.div`
   margin-left: -75px;
   margin-top: 22px;
 
-  @media screen and (max-width: 950px) {
-    margin-left: -130px;
+  @media screen and (min-width: 800px) and (max-width: 1024px) {
+    margin-left: -180px;
+  }
+
+  @media screen and (min-width: 1024px) and (max-width: 1200px) {
+    margin-left: -290px;
   }
 `
 export const WhatsContainer = styled.div`
@@ -121,8 +129,12 @@ export const SocialContainer = styled.div`
   height: 70px;
   margin-left: 100px;
 
-  @media screen and (max-width: 1024px) {
-    margin-left: -295px;
+  @media screen and (min-width: 800px) and (max-width: 1024px) {
+    margin-left: -405px;
+  }
+
+  @media screen and (min-width: 1024px) and (max-width: 1200px) {
+    margin-left: -550px;
   }
 `
 
