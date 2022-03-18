@@ -23,10 +23,6 @@ export const NameContainer = styled.div`
   @media screen and (min-width: 1024px) and (max-width: 1200px) {
     margin-left: -90px;
   }
-
-  @media screen and (min-width: 1024px) and (max-width: 1280px) {
-    margin-left: -10px;
-  }
 `
 export const Name = styled.span`
   font-family: ${theme.fontFamily.oswald};
@@ -139,10 +135,6 @@ export const SocialContainer = styled.div`
 
   @media screen and (min-width: 1024px) and (max-width: 1200px) {
     margin-left: -550px;
-  }
-
-  @media screen and (min-width: 1024px) and (max-width: 1280px) {
-    margin-left: -70px;
   }
 `
 
