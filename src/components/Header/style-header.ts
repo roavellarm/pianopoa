@@ -29,6 +29,10 @@ export const BioContainer = styled.div`
   justify-content: right;
   margin-left: 11.1rem;
   margin-top: 0.7rem;
+
+  @media screen and (max-width: 950px) {
+    display: none;
+  }
 `
 export const BioSpan = styled.span`
   margin-right: 2.7rem;
