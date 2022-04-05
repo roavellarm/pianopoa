@@ -1,10 +1,11 @@
 import styled from 'styled-components'
 import theme from '../../styles/theme'
+import HomeImg from '../../images/homeBg.png'
 
 export const HomeContainer = styled.div`
   display: flex;
   height: 100vh;
-  background: url('../../images/homeBg.png');
+  background: url(${HomeImg});
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
