@@ -5,16 +5,15 @@ export default createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    line-height: 160%;
   }
   html {
     scroll-behavior: smooth;
   }
-  :root {
+  body {
     height: 100vh;
     width: 100vw;
     max-width: 100%;
-  }
-  body {
     background: ${({ theme }) => theme.colors.black};
     font-size: ${({ theme }) => theme.fontSize.text};
     color: ${({ theme }) => theme.colors.white};
@@ -22,6 +21,31 @@ export default createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+
+  button {
+    color: ${({ theme }) => theme.colors.black};
+    font-family: 'Urbanist';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+  }
+
+  @media (max-width: 1900px) { html { font-size: 100%; } }
+  @media (max-width: 1800px) { html { font-size: 95%; } }
+  @media (max-width: 1700px) { html { font-size: 90%; } }
+  @media (max-width: 1600px) { html { font-size: 85%; } }
+  @media (max-width: 1500px) { html { font-size: 84%; } }
+  @media (max-width: 1400px) { html { font-size: 83%; } }
+  @media (max-width: 1300px) { html { font-size: 82%; } }
+  @media (max-width: 1200px) { html { font-size: 80%; } }
+  @media (max-width: 1100px) { html { font-size: 75%; } }
+  @media (max-width: 1000px) { html { font-size: 74%; } }
+  @media (max-width: 900px)  { html { font-size: 73%; } }
+  @media (max-width: 800px)  { html { font-size: 72%; } }
+  @media (max-width: 700px)  { html { font-size: 71%; } }
+  @media (max-width: 600px)  { html { font-size: 70%; } }
+
 
   ::-webkit-scrollbar {
     width: 10px;
