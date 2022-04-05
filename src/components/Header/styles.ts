@@ -1,7 +1,6 @@
 import styled from 'styled-components'
-import { theme } from '../../styles/theme'
 
-export const HeaderContainer = styled.div`
+export const HeaderContainer = styled.h1`
   background: rgba(16, 12, 8, 0.5);
   box-shadow: 0px 0px 25px 25px rgba(16, 12, 8, 0.5);
   display: flex;
@@ -12,7 +11,7 @@ export const HeaderContainer = styled.div`
   filter: brightness(77%);
 `
 export const PianoPoaContainer = styled.div`
-  font-family: ${theme.fontFamily.oswald};
+  font-family: ${({ theme }) => theme.fontFamily.oswald};
   font-size: 36px;
   margin-left: 4.5rem;
   letter-spacing: 0.5rem;
@@ -36,7 +35,7 @@ export const BioContainer = styled.div`
 `
 export const BioSpan = styled.span`
   margin-right: 2.7rem;
-  font-family: ${theme.fontFamily.urbanist};
+  font-family: ${({ theme }) => theme.fontFamily.urbanist};
   font-size: 22px;
   line-height: 26.4px;
   color: rgba(244, 211, 194, 1);
