@@ -16,12 +16,12 @@ export const Brand = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100%;
   font-family: ${theme.fontFamily.oswald};
   font-size: 2.5rem;
   white-space: nowrap;
   margin-right: 1rem;
   letter-spacing: 0.5rem;
-  line-height: 160%;
   text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.51);
   font-weight: 400;
   color: rgba(239, 239, 235, 1);
@@ -29,7 +29,8 @@ export const Brand = styled.div`
 `
 export const LinksWrapper = styled.div`
   display: flex;
-  align-items: center;
+  align-items: flex-end;
+  height: 100%;
   justify-content: space-between;
   margin-left: 1rem;
 
@@ -38,10 +39,13 @@ export const LinksWrapper = styled.div`
   }
 `
 export const NavLink = styled.span<{ isSelected: boolean }>`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
   margin: 0 1.35rem;
   font-family: ${theme.fontFamily.urbanist};
   font-size: 1.5rem;
-  line-height: 160%;
   color: ${({ isSelected }) => (isSelected ? '#90948D' : 'rgba(244, 211, 194, 1)')};
   text-shadow: 1px 1px 1px #000000;
   cursor: pointer;

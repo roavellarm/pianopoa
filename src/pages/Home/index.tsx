@@ -9,7 +9,7 @@ export const Home = () => (
           personalizado, que atende desde iniciantes a pianistas avançados.
         </ParagraphLarge>
 
-        <Button>INSCREVA-SE JÁ!</Button>
+        <Button onClick={() => alert('Em breve!')}>INSCREVA-SE JÁ!</Button>
       </SideContainer>
     </MainFilter>
   </HomeContainer>
