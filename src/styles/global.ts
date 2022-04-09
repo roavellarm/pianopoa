@@ -6,6 +6,12 @@ export default createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     line-height: 160%;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    user-select: none;
   }
   html {
     scroll-behavior: smooth;
@@ -40,11 +46,11 @@ export default createGlobalStyle`
   @media (max-width: 1300px) { html { font-size: 82%; } }
   @media (max-width: 1200px) { html { font-size: 80%; } }
   @media (max-width: 1100px) { html { font-size: 75%; } }
-  @media (max-width: 1000px) { html { font-size: 74%; } }
-  @media (max-width: 900px)  { html { font-size: 73%; } }
-  @media (max-width: 800px)  { html { font-size: 72%; } }
-  @media (max-width: 700px)  { html { font-size: 71%; } }
-  @media (max-width: 600px)  { html { font-size: 70%; } }
+  @media (max-width: 1000px) { html { font-size: 70%; } }
+  @media (max-width: 900px)  { html { font-size: 70%; } }
+  @media (max-width: 800px)  { html { font-size: 65%; } }
+  @media (max-width: 700px)  { html { font-size: 65%; } }
+  @media (max-width: 600px)  { html { font-size: 65%; } }
 
 
   ::-webkit-scrollbar {
