@@ -21,7 +21,7 @@ import face from '../../images/face.svg'
 import insta from '../../images/insta.svg'
 import yotube from '../../images/yt.svg'
 
-function Footer() {
+export function Footer() {
   return (
     <FooterContainer>
       <NameContainer>
@@ -61,5 +61,3 @@ function Footer() {
     </FooterContainer>
   )
 }
-
-export default Footer
