@@ -38,6 +38,14 @@ export default createGlobalStyle`
     cursor: pointer;
   }
 
+  @media (max-width: 4000px) { html { font-size: 200%; } }
+  @media (max-width: 3000px) { html { font-size: 150%; } }
+  @media (max-width: 2500px) { html { font-size: 130%; } }
+  @media (max-width: 2400px) { html { font-size: 125%; } }
+  @media (max-width: 2300px) { html { font-size: 120%; } }
+  @media (max-width: 2200px) { html { font-size: 115%; } }
+  @media (max-width: 2100px) { html { font-size: 110%; } }
+  @media (max-width: 2000px) { html { font-size: 105%; } }
   @media (max-width: 1900px) { html { font-size: 100%; } }
   @media (max-width: 1800px) { html { font-size: 95%; } }
   @media (max-width: 1700px) { html { font-size: 90%; } }
