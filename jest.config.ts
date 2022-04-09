@@ -1,7 +1,5 @@
 export default {
   testEnvironment: 'jsdom',
-  roots: ['<rootDir>/src'],
-  verbose: true,
   transform: {
     '^.+\\.tsx?$': 'ts-jest',
   },
@@ -10,9 +8,4 @@ export default {
     '\\.(css|less|sass|scss)$': 'identity-obj-proxy',
   },
   setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
-  globals: {
-    'ts-jest': {
-      diagnostics: false,
-    },
-  },
 }
