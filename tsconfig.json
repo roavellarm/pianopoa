@@ -15,10 +15,9 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "rootDir": "./",
     "baseUrl": "./src"
   },
   "include": ["src", "./src", "**/*.ts", "**/*.tsx"],
-  "files": ["./src/styles/styled.ts"],
+  "files": ["./src/styles/styled.d.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
