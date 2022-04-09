@@ -35,6 +35,7 @@ export default createGlobalStyle`
     font-weight: 600;
     font-size: 2.5rem;
     text-transform: uppercase;
+    cursor: pointer;
   }
 
   @media (max-width: 1900px) { html { font-size: 100%; } }

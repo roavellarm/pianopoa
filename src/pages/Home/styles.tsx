@@ -37,7 +37,15 @@ export const ParagraphLarge = styled.h2`
 export const Button = styled.button`
   align-self: flex-end;
   background: rgba(244, 211, 194, 0.9);
+  border: 2px solid rgba(244, 211, 194, 0.9);
   width: fit-content;
+  white-space: nowrap;
   padding: 1rem 3rem;
   margin-top: 2rem;
+  transition: all ease 0.25s;
+
+  &:hover {
+    background: transparent;
+    color: rgba(244, 211, 194, 0.9);
+  }
 `
