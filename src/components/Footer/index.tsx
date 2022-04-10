@@ -3,7 +3,7 @@ import {
   ContactContainer,
   LineNameContainer,
   Name,
-  NameContainer,
+  LeftContainer,
   WhatsImage,
   WhatsContainer,
   WhatsNumber,
@@ -11,7 +11,6 @@ import {
   EmailContainer,
   EmailNumber,
   SocialContainer,
-  SocialText,
   SocialIconsContainer,
 } from './styles'
 
@@ -24,34 +23,30 @@ import yotube from '../../images/yt.svg'
 export function Footer() {
   return (
     <FooterContainer>
-      <NameContainer>
+      <LeftContainer>
         <Name>Jordana Brusa</Name>
         <LineNameContainer />
-      </NameContainer>
-      <ContactContainer>
-        <WhatsContainer>
-          <WhatsImage src={whats} alt="whats" />
-          <WhatsNumber>(51) 98459 6917</WhatsNumber>
-        </WhatsContainer>
-        <EmailContainer>
-          <EmailImage src={email} alt="email" />
-          <EmailNumber>jordanabrusa11@gmail.com</EmailNumber>
-        </EmailContainer>
-      </ContactContainer>
+
+        <ContactContainer>
+          <WhatsContainer>
+            <WhatsImage src={whats} alt="whats" />
+            <WhatsNumber>(51) 98459 6917</WhatsNumber>
+          </WhatsContainer>
+          <EmailContainer>
+            <EmailImage src={email} alt="email" />
+            <EmailNumber>jordanabrusa11@gmail.com</EmailNumber>
+          </EmailContainer>
+        </ContactContainer>
+      </LeftContainer>
+
       <SocialContainer>
-        <SocialText>Social</SocialText>
+        Social
         <SocialIconsContainer>
           <a href="https://www.facebook.com/jordana.brusa">
-            <img src={face} alt="face" width="30" height="30" style={{ marginRight: '20px' }} />
+            <img src={face} alt="face" width="30" height="30" />
           </a>
           <a href="https://www.youtube.com/channel/UCh1K7DHlglexif0ll-jSN0g">
-            <img
-              src={yotube}
-              alt="youtube"
-              width="32"
-              height="33"
-              style={{ marginRight: '20px' }}
-            />
+            <img src={yotube} alt="youtube" width="32" height="33" />
           </a>
           <a href="https://www.instagram.com/jordanabrusa/?hl=pt-br">
             <img src={insta} alt="instagram" width="30" height="30" />

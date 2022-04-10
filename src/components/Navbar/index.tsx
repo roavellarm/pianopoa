@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { NavbarContainer, NavLink, Brand, LinksWrapper } from './styles'
+import { NavbarContainer, Wrapper, NavLink, Brand, LinksWrapper } from './styles'
 
 export const Navbar = () => {
   const [currentPath, setCurrentPath] = useState(`${window.location.pathname || '/'}`)
@@ -21,19 +21,21 @@ export const Navbar = () => {
 
   return (
     <NavbarContainer>
-      <Brand onClick={() => navigate('/')}>PIANO POA</Brand>
+      <Wrapper>
+        <Brand onClick={() => navigate('/')}>PIANO POA</Brand>
 
-      <LinksWrapper>
-        {links.map((link) => (
-          <NavLink
-            key={link.path}
-            isSelected={currentPath === link.path}
-            onClick={() => navigate(link.path)}
-          >
-            {link.label}
-          </NavLink>
-        ))}
-      </LinksWrapper>
+        <LinksWrapper>
+          {links.map((link) => (
+            <NavLink
+              key={link.path}
+              isSelected={currentPath === link.path}
+              onClick={() => navigate(link.path)}
+            >
+              {link.label}
+            </NavLink>
+          ))}
+        </LinksWrapper>
+      </Wrapper>
     </NavbarContainer>
   )
 }
