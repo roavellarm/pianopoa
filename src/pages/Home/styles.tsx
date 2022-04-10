@@ -1,30 +1,19 @@
 import styled from 'styled-components'
 import theme from '../../styles/theme'
-import HomeImg from '../../images/homeBg.png'
 
-export const HomeContainer = styled.div`
+export const Row = styled.div`
   display: flex;
-  height: 100vh;
-  background: url(${HomeImg});
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-`
-export const MainFilter = styled.div`
-  display: flex;
-  width: 100%;
   justify-content: flex-end;
-  align-items: center;
-  background: rgba(16, 12, 8, 0.25);
-  padding: 0 4rem;
 `
+
 export const SideContainer = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: center;
   width: 50%;
+  padding: 2rem;
   background: rgba(16, 12, 8, 0.55);
   box-shadow: 0px 0px 50px 50px rgba(16, 12, 8, 0.55);
-  padding: 2rem;
 `
 
 export const ParagraphLarge = styled.h2`
