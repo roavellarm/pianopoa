@@ -2,12 +2,13 @@
   "name": "pianopoa",
   "private": true,
   "version": "0.0.0",
+  "main": "main.tsx",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "test": "jest --no-cache --silent --watchAll",
-    "testDev": "jest --no-cache",
+    "test": "jest --no-cache",
+    "testDev": "jest --no-cache --silent --watchAll",
     "coverage": "jest --coverage --watchAll",
     "lint": "./node_modules/.bin/eslint './**/*.{js,ts,tsx}' --quiet"
   },

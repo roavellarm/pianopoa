@@ -1,25 +1,26 @@
 import {
   FooterContainer,
-  ContactContainer,
+  // ContactContainer,
   LineNameContainer,
   Name,
   NameContainer,
-  WhatsImage,
-  WhatsContainer,
-  WhatsNumber,
-  EmailImage,
-  EmailContainer,
-  EmailNumber,
-  SocialContainer,
-  SocialText,
-  SocialIconsContainer,
-} from './style-footer'
+  // WhatsImage,
+  // WhatsContainer,
+  // WhatsNumber,
+  // EmailImage,
+  // EmailContainer,
+  // EmailNumber,
+  // SocialContainer,
+  // SocialText,
+  // SocialIconsContainer,
+} from './styles'
 
-import whats from '../../images/whats.svg'
-import email from '../../images/email.svg'
-import face from '../../images/face.svg'
-import insta from '../../images/insta.svg'
-import yotube from '../../images/yt.svg'
+// import whats from '../../images/whats.svg'
+// import email from '../../images/email.svg'
+// import face from '../../images/face.svg'
+// import insta from '../../images/insta.svg'
+// import yotube from '../../images/yt.svg'
+
 
 export function Footer() {
   return (
@@ -28,7 +29,7 @@ export function Footer() {
         <Name>Jordana Brusa</Name>
         <LineNameContainer />
       </NameContainer>
-      <ContactContainer>
+      {/* <ContactContainer>
         <WhatsContainer>
           <WhatsImage src={whats} alt="whats" />
           <WhatsNumber>(51) 98459 6917</WhatsNumber>
@@ -56,8 +57,8 @@ export function Footer() {
           <a href="https://www.instagram.com/jordanabrusa/?hl=pt-br">
             <img src={insta} alt="instagram" width="30" height="30" />
           </a>
-        </SocialIconsContainer>
-      </SocialContainer>
+        </SocialIconsContainer> 
+      </SocialContainer> */}
     </FooterContainer>
   )
 }
