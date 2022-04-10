@@ -3,13 +3,13 @@ import theme from '../../styles/theme'
 
 export const NavbarContainer = styled.h1`
   display: flex;
-  position: fixed;
   justify-content: center;
   align-items: center;
   height: 5.5rem;
   width: 100%;
   background: rgba(16, 12, 8, 0.5);
   box-shadow: 0px 0px 25px 25px rgba(16, 12, 8, 0.5);
+  flex-shrink: 0;
   filter: brightness(77%);
 `
 export const Brand = styled.div`
@@ -20,12 +20,16 @@ export const Brand = styled.div`
   font-family: ${theme.fontFamily.oswald};
   font-size: 2.5rem;
   white-space: nowrap;
-  margin-right: 1rem;
+  margin: -0.5rem 1rem 0 0;
   letter-spacing: 0.5rem;
   text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.51);
   font-weight: 400;
   color: rgba(239, 239, 235, 1);
   cursor: pointer;
+  transition: color ease 0.25s;
+  &:hover {
+    color: #e7a17e;
+  }
 `
 export const LinksWrapper = styled.div`
   display: flex;
@@ -49,9 +53,9 @@ export const NavLink = styled.span<{ isSelected: boolean }>`
   color: ${({ isSelected }) => (isSelected ? '#90948D' : 'rgba(244, 211, 194, 1)')};
   text-shadow: 1px 1px 1px #000000;
   cursor: pointer;
-  transition: ease 0.5s;
+  transition: color ease 0.25s;
 
-  :hover {
+  &:hover {
     color: #e7a17e;
   }
 `
