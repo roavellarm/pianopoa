@@ -12,15 +12,18 @@ export const NavbarContainer = styled.h1`
   flex-shrink: 0;
   filter: brightness(77%);
 `
-export const Brand = styled.div`
+export const Wrapper = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  width: 100%;
+`
+
+export const Brand = styled.div`
   height: 100%;
   font-family: ${theme.fontFamily.oswald};
   font-size: 2.5rem;
   white-space: nowrap;
-  margin: -0.5rem 1rem 0 0;
   letter-spacing: 0.5rem;
   text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.51);
   font-weight: 400;
@@ -33,10 +36,7 @@ export const Brand = styled.div`
 `
 export const LinksWrapper = styled.div`
   display: flex;
-  align-items: flex-end;
-  height: 100%;
   justify-content: space-between;
-  margin-left: 1rem;
 
   @media screen and (max-width: 750px) {
     display: none;
@@ -44,10 +44,8 @@ export const LinksWrapper = styled.div`
 `
 export const NavLink = styled.span<{ isSelected: boolean }>`
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  margin: 0 1.35rem;
+  white-space: nowrap;
+  margin: 0px 1.35rem;
   font-family: ${theme.fontFamily.urbanist};
   font-size: 1.5rem;
   color: ${({ isSelected }) => (isSelected ? '#90948D' : 'rgba(244, 211, 194, 1)')};
