@@ -16,7 +16,7 @@ export default {
     title1: '5rem',
     title2: '3rem',
     title3: '2.25rem',
-    title4: '1.35rem',
+    title4: '1.55rem',
     text: '1.3125rem',
     link: '2.125rem',
     buttonText: '2rem',

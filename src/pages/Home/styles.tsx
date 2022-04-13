@@ -17,6 +17,8 @@ export const SideContainer = styled.div`
 
   @media screen and (max-width: 800px) {
     width: 80%;
+    justify-content: start;
+    align-items: flex-end;
   }
 `
 
@@ -27,7 +29,7 @@ export const ParagraphLarge = styled.h2`
   margin-bottom: 2rem;
 
   @media screen and (max-width: 800px) {
-    width: 90%;
+    width: 100%;
     font-size: ${theme.fontSize.title4};
   }
 `
@@ -49,10 +51,11 @@ export const Button = styled.button`
 
   @media screen and (max-width: 800px) {
     width: 90%;
-    font-size: 1.6rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    font-size: 1.4rem;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+    margin-top: 0;
   }
 `
