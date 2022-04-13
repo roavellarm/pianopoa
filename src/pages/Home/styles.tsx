@@ -14,6 +14,10 @@ export const SideContainer = styled.div`
   padding: 2rem;
   background: rgba(16, 12, 8, 0.55);
   box-shadow: 0px 0px 50px 50px rgba(16, 12, 8, 0.55);
+
+  @media screen and (max-width: 800px) {
+    width: 80%;
+  }
 `
 
 export const ParagraphLarge = styled.h2`
@@ -21,6 +25,11 @@ export const ParagraphLarge = styled.h2`
   font-weight: 400;
   font-size: ${theme.fontSize.title3};
   margin-bottom: 2rem;
+
+  @media screen and (max-width: 800px) {
+    width: 90%;
+    font-size: ${theme.fontSize.title4};
+  }
 `
 
 export const Button = styled.button`
@@ -36,5 +45,14 @@ export const Button = styled.button`
   &:hover {
     background: transparent;
     color: rgba(244, 211, 194, 0.9);
+  }
+
+  @media screen and (max-width: 800px) {
+    width: 90%;
+    font-size: 1.6rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 `

@@ -10,6 +10,11 @@ export const Container = styled.div<{ backgroundImage?: string }>`
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+
+  @media screen and (max-width: 800px) {
+    background-size: contain;
+    background-position: top;
+  }
 `
 
 export const MainFilter = styled.div`
