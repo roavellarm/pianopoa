@@ -26,7 +26,6 @@ export const ContactContainer = styled.div`
 
   @media screen and (max-width: 800px) {
     align-items: center;
-    background: red;
     justify-content: center;
   }
 `

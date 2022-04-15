@@ -28,9 +28,22 @@ export const ParagraphLarge = styled.h2`
   font-size: ${theme.fontSize.title3};
   margin-bottom: 2rem;
 
-  @media screen and (max-width: 800px) {
-    width: 100%;
+  @media screen and (max-width: 400px) {
     font-size: ${theme.fontSize.title4};
+    width: 26rem;
+    padding-left: 90px;
+  }
+
+  @media screen and (min-width: 400px) and (max-width: 600px) {
+    font-size: ${theme.fontSize.title4};
+    width: 90%;
+    padding-left: 30px;
+  }
+
+  @media screen and (min-width: 600px) and (max-width: 800px) {
+    font-size: ${theme.fontSize.title4};
+    width: 75%;
+    padding-right: 30px;
   }
 `
 
@@ -49,8 +62,28 @@ export const Button = styled.button`
     color: rgba(244, 211, 194, 0.9);
   }
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 400px) {
     width: 90%;
+    font-size: 1.4rem;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+    margin-top: 0;
+  }
+
+  @media screen and (min-width: 400px) and (max-width: 700px) {
+    width: 70%;
+    font-size: 1.4rem;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+    margin-top: 0;
+  }
+
+  @media screen and (min-width: 700px) and (max-width: 800px) {
+    width: 40%;
     font-size: 1.4rem;
     padding-top: 0.6rem;
     padding-bottom: 0.6rem;
