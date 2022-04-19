@@ -12,6 +12,8 @@ import {
   EmailNumber,
   SocialContainer,
   SocialIconsContainer,
+  LineNameContainerHide,
+  Img,
 } from './styles'
 
 import whats from '../../images/whats.svg'
@@ -25,8 +27,8 @@ export function Footer() {
     <FooterContainer>
       <LeftContainer>
         <Name>Jordana Brusa</Name>
-        <LineNameContainer />
 
+        <LineNameContainer />
         <ContactContainer>
           <WhatsContainer>
             <WhatsImage src={whats} alt="whats" />
@@ -36,6 +38,21 @@ export function Footer() {
             <EmailImage src={email} alt="email" />
             <EmailNumber>jordanabrusa11@gmail.com</EmailNumber>
           </EmailContainer>
+          {/* <SocialContainerHide>
+            Social
+            <SocialIconsContainer>
+              <a href="https://www.facebook.com/jordana.brusa">
+                <img src={face} alt="face" width="30" height="30" />
+              </a>
+              <a href="https://www.youtube.com/channel/UCh1K7DHlglexif0ll-jSN0g">
+                <img src={yotube} alt="youtube" width="32" height="33" />
+              </a>
+              <a href="https://www.instagram.com/jordanabrusa/?hl=pt-br">
+                <img src={insta} alt="instagram" width="30" height="30" />
+              </a>
+            </SocialIconsContainer>
+          </SocialContainerHide> */}
+          <LineNameContainerHide />
         </ContactContainer>
       </LeftContainer>
 
@@ -43,13 +60,13 @@ export function Footer() {
         Social
         <SocialIconsContainer>
           <a href="https://www.facebook.com/jordana.brusa">
-            <img src={face} alt="face" width="30" height="30" />
+            <Img src={face} alt="face" />
           </a>
           <a href="https://www.youtube.com/channel/UCh1K7DHlglexif0ll-jSN0g">
-            <img src={yotube} alt="youtube" width="32" height="33" />
+            <Img src={yotube} alt="youtube" />
           </a>
           <a href="https://www.instagram.com/jordanabrusa/?hl=pt-br">
-            <img src={insta} alt="instagram" width="30" height="30" />
+            <Img src={insta} alt="instagram" />
           </a>
         </SocialIconsContainer>
       </SocialContainer>

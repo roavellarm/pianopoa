@@ -23,7 +23,6 @@ export const Navbar = () => {
     <NavbarContainer>
       <Wrapper>
         <Brand onClick={() => navigate('/')}>PIANO POA</Brand>
-
         <LinksWrapper>
           {links.map((link) => (
             <NavLink
