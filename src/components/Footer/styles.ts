@@ -170,7 +170,7 @@ export const SocialContainer = styled.div`
   letter-spacing: 0.2rem;
   color: #292a2c;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 500px) {
     /* display: none; */
     justify-content: space-between;
     align-items: flex-start;
@@ -189,27 +189,7 @@ export const SocialIconsContainer = styled.div`
 
   @media screen and (max-width: 800px) {
     /* display: none; */
-    margin-bottom: 120px;
-  }
-`
-
-export const SocialContainerHide = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
-  width: 100%;
-  max-width: 130px;
-  font-family: ${theme.fontFamily.oswald};
-  font-weight: 500;
-  font-size: 1.4rem;
-  letter-spacing: 0.2rem;
-  color: #292a2c;
-
-  @media screen and (min-width: 800px) {
-    display: none;
-    justify-content: start;
-    align-items: flex-start;
+    /* margin-bottom: 120px; */
   }
 `
 
@@ -218,8 +198,8 @@ export const Img = styled.img`
   width: 30px;
   height: 30px;
 
-  @media screen and (min-width: 800px) {
-    display: none;
+  @media screen and (max-width: 800px) {
+    /* display: none; */
     width: 20px;
     height: 20px;
   }
