@@ -10,10 +10,12 @@ export const Container = styled.div<{ backgroundImage?: string }>`
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  filter: brightness(125%);
 
   @media screen and (max-width: 800px) {
     background-size: contain;
     background-position: top;
+    filter: brightness(180%);
   }
 `
 

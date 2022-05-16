@@ -4,22 +4,21 @@ import theme from '../../styles/theme'
 export const FooterContainer = styled.div`
   display: flex;
   width: 100%;
-  height: 6rem;
+  height: 7.2rem;
   justify-content: space-around;
   background: rgba(244, 211, 194, 0.9);
   flex-shrink: 0;
+  filter: brightness(77%);
 
   @media screen and (max-width: 800px) {
-    /* justify-content: center; */
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
-    /* align-items: center; */
     height: auto;
     bottom: 0px;
     padding-bottom: 22px;
     padding-top: 22px;
     padding-left: 22px;
+    filter: brightness(59%);
   }
 `
 export const LeftContainer = styled.div`
@@ -28,7 +27,6 @@ export const LeftContainer = styled.div`
   justify-content: center;
 
   @media screen and (max-width: 800px) {
-    /* margin-left: -98px; */
     width: 100%;
   }
 `
@@ -39,12 +37,9 @@ export const ContactContainer = styled.div`
   justify-content: center;
 
   @media screen and (max-width: 800px) {
-    /* align-items: center; */
-    /* justify-content: center; */
     margin-left: 50px;
     margin-top: 10px;
     margin-bottom: 20px;
-    /* background: red; */
     display: flex;
   }
 `
@@ -77,12 +72,6 @@ export const WhatsContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-
-  @media screen and (max-width: 800px) {
-    /* margin-right: 0; */
-    /* margin-top: -20px; */
-    /* padding-top: 10px; */
-  }
 `
 
 export const WhatsImage = styled.img`

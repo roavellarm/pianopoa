@@ -56,6 +56,7 @@ export const Button = styled.button`
   padding: 1rem 3rem;
   margin-top: 2rem;
   transition: all ease 0.25s;
+  filter: brightness(77%);
 
   &:hover {
     background: transparent;
@@ -70,6 +71,7 @@ export const Button = styled.button`
     padding-left: 0.6rem;
     padding-right: 0.6rem;
     margin-top: 0;
+    filter: brightness(59%);
   }
 
   @media screen and (min-width: 400px) and (max-width: 700px) {
@@ -80,6 +82,7 @@ export const Button = styled.button`
     padding-left: 0.6rem;
     padding-right: 0.6rem;
     margin-top: 0;
+    filter: brightness(59%);
   }
 
   @media screen and (min-width: 700px) and (max-width: 800px) {
@@ -90,5 +93,6 @@ export const Button = styled.button`
     padding-left: 0.6rem;
     padding-right: 0.6rem;
     margin-top: 0;
+    filter: brightness(59%);
   }
 `
