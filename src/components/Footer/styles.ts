@@ -15,7 +15,7 @@ export const FooterContainer = styled.div`
     flex-direction: column;
     height: auto;
     bottom: 0px;
-    padding-bottom: 22px;
+    padding-bottom: 32px;
     padding-top: 22px;
     padding-left: 22px;
     filter: brightness(59%);
