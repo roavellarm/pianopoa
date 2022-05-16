@@ -10,8 +10,16 @@ export const FooterContainer = styled.div`
   flex-shrink: 0;
 
   @media screen and (max-width: 800px) {
-    justify-content: center;
-    height: 7rem;
+    /* justify-content: center; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    height: auto;
+    bottom: 0px;
+    padding-bottom: 22px;
+    padding-top: 22px;
+    padding-left: 22px;
   }
 `
 export const LeftContainer = styled.div`
@@ -20,7 +28,7 @@ export const LeftContainer = styled.div`
   justify-content: center;
 
   @media screen and (max-width: 800px) {
-    margin-left: -98px;
+    /* margin-left: -98px; */
     width: 100%;
   }
 `
@@ -31,10 +39,13 @@ export const ContactContainer = styled.div`
   justify-content: center;
 
   @media screen and (max-width: 800px) {
-    align-items: center;
-    justify-content: center;
-    margin-left: -22px;
-    margin-top: -10px;
+    /* align-items: center; */
+    /* justify-content: center; */
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    /* background: red; */
+    display: flex;
   }
 `
 export const Name = styled.span`
@@ -51,6 +62,7 @@ export const Name = styled.span`
 `
 export const LineNameContainer = styled.div`
   color: rgba(41, 42, 44, 1);
+  background: rgba(41, 42, 44, 1);
   width: 5rem;
   margin: 0px 0.5rem;
   border: 2px solid #292a2c;
@@ -61,35 +73,15 @@ export const LineNameContainer = styled.div`
   }
 `
 
-export const LineNameContainerHide = styled.div`
-  /* color: rgba(41, 42, 44, 1);
-  width: 5rem;
-  margin: 0px 0.5rem;
-  border: 2px solid #292a2c;
-  transform: rotate(90deg); */
-
-  display: none;
-
-  @media screen and (max-width: 800px) {
-    display: flex;
-    color: rgba(41, 42, 44, 1);
-    width: 5rem;
-    /* margin: 0px 0.5rem; */
-    border: 2px solid #292a2c;
-    transform: rotate(90deg);
-    margin-top: -25px;
-    margin-left: 38px;
-  }
-`
 export const WhatsContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
 
   @media screen and (max-width: 800px) {
-    margin-right: 0;
-    margin-top: -20px;
-    padding-top: 10px;
+    /* margin-right: 0; */
+    /* margin-top: -20px; */
+    /* padding-top: 10px; */
   }
 `
 
@@ -171,12 +163,11 @@ export const SocialContainer = styled.div`
   color: #292a2c;
 
   @media screen and (max-width: 500px) {
-    /* display: none; */
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-left: -180px;
+    align-items: center;
+    margin-left: 5.2rem;
     font-size: 1.4rem;
     margin-top: 10px;
+    width: 10rem;
   }
 `
 

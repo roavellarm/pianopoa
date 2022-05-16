@@ -12,7 +12,7 @@ import {
   EmailNumber,
   SocialContainer,
   SocialIconsContainer,
-  LineNameContainerHide,
+  // LineNameContainerHide,
   Img,
 } from './styles'
 
@@ -39,7 +39,7 @@ export function Footer() {
             <EmailNumber>jordanabrusa11@gmail.com</EmailNumber>
           </EmailContainer>
 
-          <LineNameContainerHide />
+          {/* <LineNameContainerHide /> */}
         </ContactContainer>
       </LeftContainer>
 
