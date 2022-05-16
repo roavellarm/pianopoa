@@ -164,7 +164,7 @@ export const SocialContainer = styled.div`
 
   @media screen and (max-width: 500px) {
     align-items: center;
-    margin-left: 5.2rem;
+    margin-left: 1rem;
     font-size: 1.4rem;
     margin-top: 10px;
     width: 10rem;
