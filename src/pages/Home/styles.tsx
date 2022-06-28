@@ -72,6 +72,7 @@ export const Button = styled.button`
     padding-right: 0.6rem;
     margin-top: 0;
     filter: brightness(59%);
+    margin-right: 20px;
   }
 
   @media screen and (min-width: 400px) and (max-width: 700px) {
@@ -83,6 +84,7 @@ export const Button = styled.button`
     padding-right: 0.6rem;
     margin-top: 0;
     filter: brightness(59%);
+    margin-right: 20px;
   }
 
   @media screen and (min-width: 700px) and (max-width: 800px) {
