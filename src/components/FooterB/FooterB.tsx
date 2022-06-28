@@ -10,7 +10,7 @@ function FooterB() {
   return (
     <FooterContainerB>
       <LinksContainer>
-        <ContainerImages style={{ alignItems: 'center', display: 'flex' }}>
+        <ContainerImages style={{ alignItems: 'center', display: 'flex', marginBottom: '15px' }}>
           <a
             style={{
               alignItems: 'center',
