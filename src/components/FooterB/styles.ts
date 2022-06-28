@@ -7,11 +7,15 @@ export const FooterContainerB = styled.div`
   filter: brightness(59%);
 
   color: black;
-  height: 280px;
+  height: 180px;
 
   justify-content: space-around;
   align-items: flex-start;
   padding: 3rem;
+
+  @media screen and (max-width: 800px) {
+    height: 246px;
+  }
 `
 
 export const LinksContainer = styled.div`
@@ -53,7 +57,7 @@ export const ContainerText = styled.div`
   display: flex;
 
   @media screen and (max-width: 700px) {
-    margin-top: 22px;
+    margin-top: 8px;
   }
 `
 export const ContainerImages = styled.div`
@@ -61,6 +65,6 @@ export const ContainerImages = styled.div`
   display: flex;
 
   @media screen and (max-width: 700px) {
-    margin-top: 21px;
+    margin-top: 6px;
   }
 `

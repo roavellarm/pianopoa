@@ -4,6 +4,7 @@ import Whatsapp from './images/whats.svg'
 import Insta from './images/insta.svg'
 import Email from './images/email.svg'
 import Face from './images/face.svg'
+import yt from './images/yt.svg'
 
 function FooterB() {
   return (
@@ -16,7 +17,7 @@ function FooterB() {
               display: 'flex',
               justifyContent: 'center',
               textDecoration: 'none',
-              color: 'white',
+              color: 'black',
             }}
             target="_blank"
             href="#Olá, gostaria de um orçamento"
@@ -24,7 +25,7 @@ function FooterB() {
           >
             <img src={Whatsapp} alt="whataspp" width="25" />
             <span style={{ marginLeft: '10px', fontFamily: 'Arial', fontSize: '17px' }}>
-              (51)-0000000
+              (51)-984596917
             </span>
           </a>
         </ContainerImages>
@@ -36,27 +37,27 @@ function FooterB() {
               display: 'flex',
               justifyContent: 'center',
               textDecoration: 'none',
-              color: 'white',
+              color: 'black',
             }}
+            href="mailto:jordanabrusa11@gmail.com?subject=Minha Mensagem&body=Olá, Bom dia!"
             target="_blank"
-            href={`mailto:ggg@gmail.com?subject=Minha Mensagem&body=Olá, Bom dia!
-           
-          `}
             rel="noreferrer"
           >
             <img src={Email} alt="email" width="25" />
             <span style={{ marginLeft: '10px', fontFamily: 'Arial', fontSize: '17px' }}>
-              fulano@gmail.com
+              jordanabrusa11@gmail.com
             </span>
           </a>
         </ContainerImages>
         <ContainerText>
-          <a href="#">
+          <a href="https://www.facebook.com/jordana.brusa">
             <img src={Face} alt="whataspp" width="35" style={{ marginRight: '25px' }} />
           </a>
-
-          <a href="#">
+          <a href="https://www.instagram.com/jordanabrusa/?hl=pt-br">
             <img src={Insta} alt="whataspp" width="35" />
+          </a>
+          <a href="https://www.youtube.com/channel/UCh1K7DHlglexif0ll-jSN0g">
+            <img src={yt} alt="youtube" width="35" style={{ marginLeft: '25px' }} />
           </a>
         </ContainerText>
       </LinksContainer>
