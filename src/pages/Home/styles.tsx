@@ -31,19 +31,19 @@ export const ParagraphLarge = styled.h2`
   @media screen and (max-width: 400px) {
     font-size: ${theme.fontSize.title4};
     width: 26rem;
-    padding-left: 90px;
+    padding-left: 50px;
   }
 
   @media screen and (min-width: 400px) and (max-width: 600px) {
     font-size: ${theme.fontSize.title4};
     width: 90%;
-    padding-left: 30px;
+    padding-left: 20px;
   }
 
   @media screen and (min-width: 600px) and (max-width: 800px) {
     font-size: ${theme.fontSize.title4};
     width: 75%;
-    padding-right: 30px;
+    padding-right: 20px;
   }
 `
 
