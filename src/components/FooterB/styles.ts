@@ -57,7 +57,7 @@ export const ContainerText = styled.div`
   display: flex;
 
   @media screen and (max-width: 700px) {
-    margin-top: 8px;
+    margin-top: 14px;
   }
 `
 export const ContainerImages = styled.div`
