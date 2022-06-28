@@ -14,7 +14,7 @@ export const FooterContainerB = styled.div`
   padding: 3rem;
 
   @media screen and (max-width: 800px) {
-    height: 246px;
+    height: 266px;
   }
 `
 
