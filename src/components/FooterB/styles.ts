@@ -14,7 +14,7 @@ export const FooterContainerB = styled.div`
   padding: 3rem;
 
   @media screen and (max-width: 800px) {
-    height: 266px;
+    height: 275px;
   }
 `
 
@@ -65,6 +65,6 @@ export const ContainerImages = styled.div`
   display: flex;
 
   @media screen and (max-width: 700px) {
-    margin-top: 6px;
+    margin-top: 22px;
   }
 `
