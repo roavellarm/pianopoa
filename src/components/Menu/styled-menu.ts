@@ -7,6 +7,6 @@ export const MenuContainer = styled.div`
     display: flex;
     justify-content: right;
     align-items: flex-end;
-    margin-left: 30px;
+    margin-left: 60px;
   }
 `
