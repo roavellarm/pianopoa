@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import SimpleMenu from '../Menu/menu'
 import { NavbarContainer, Wrapper, NavLink, Brand, LinksWrapper } from './styles'
 
 export const Navbar = () => {
@@ -23,7 +24,7 @@ export const Navbar = () => {
     <NavbarContainer>
       <Wrapper>
         <Brand onClick={() => navigate('/')}>PIANO POA</Brand>
-
+        <SimpleMenu />
         <LinksWrapper>
           {links.map((link) => (
             <NavLink

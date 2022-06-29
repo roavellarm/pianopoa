@@ -38,6 +38,8 @@ export default createGlobalStyle`
     cursor: pointer;
   }
 
+
+
   @media (max-width: 4000px) { html { font-size: 200%; } }
   @media (max-width: 3000px) { html { font-size: 150%; } }
   @media (max-width: 2500px) { html { font-size: 130%; } }

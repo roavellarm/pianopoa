@@ -17,6 +17,10 @@ export const Wrapper = styled.div`
   align-items: center;
   justify-content: space-between;
   width: 100%;
+
+  @media screen and (max-width: 600px) {
+    margin-left: -45px;
+  }
 `
 
 export const Brand = styled.div`
